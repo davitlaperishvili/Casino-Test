@@ -1,0 +1,98 @@
+section.page_filter{
+    .container{
+        .filter_wrap{
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            border-bottom: 1px solid $cwhite;
+            background-color: $cread;
+            .filter_item{
+                display: flex;
+                align-items: center;
+                height: 100px;
+                padding: 25px 0;
+                margin-right: 25px;
+                border-bottom: 3px solid transparent;
+                &.is-active{
+                    border-color: $cwhite;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                .all_games{
+                    display: flex;
+                    align-items: center;
+                    .filter_item_title{
+                        font-size: 20px;
+                        color: $cwhite;
+                        font-weight: 600;
+                        margin-right: 10px;
+                    }
+                    .filter_item_value{
+                        color: $cdarkyellow;
+                        font-size: 20px;
+                    }
+                }
+                .categories{
+                    .select2 {
+                        width: auto !important;
+                        .select2-selection--single{
+                            background-color: transparent;
+                            border: none;
+                            .select2-selection__rendered{
+                                color: $cwhite;
+                                font-size: 20px;
+                            }
+                            .select2-selection__arrow{
+                                &:before,
+                                &::after{
+                                    background-color: $cwhite;
+                                    width: 15px;
+                                    height: 1px;
+                                }
+                                &:before{
+                                    margin-left: 0;
+                                }
+                                &:after{
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .search_bar{
+                    .form_items{
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 10px;
+                        border: 1px solid $cbase;
+                        width: 200px;
+                        .form_item{
+                            margin-bottom: 0;
+                            input{
+                                height: auto;
+                                color: $cbase;
+                                font-size: 17px;
+                                background-color: transparent;
+                                border: none;
+                                padding: 0 35px 0 0;
+                                text-overflow: ellipsis;
+                                &::placeholder{
+                                    color: $cbase;
+                                    font-size: 17px;
+                                }
+                            }
+                            &.form_submit{
+                                position: absolute;
+                                right: 10px;
+                                button{
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

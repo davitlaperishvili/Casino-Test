@@ -1,0 +1,47 @@
+section.categories{
+    margin-bottom: 25px;
+    .categories_list{
+        ul{
+            @extend .no-list;
+            display: flex;
+            align-items: center;
+            padding: 25px 30px;
+            background-color: $cread;
+            li{
+                margin-right: 100px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    svg{
+                        margin-bottom: 5px;
+                        path{
+                            fill: $cbase;
+                        }
+                    }
+                    span{
+                        color: $cbase;
+                        font-size: 17px;
+                    }
+                }
+                &.is-active,
+                &:hover{
+                    a{
+                        svg{
+                            path{
+                                fill: $cyellow;
+                            }
+                        }
+                        span{
+                            color: $cyellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+header.page_header{
+    display: flex;
+    align-items: center;
+    background-color: $cdark;
+    margin-bottom: 25px;
+    .container_big{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 45px 0 240px;
+        @media(max-width: 1024px){
+            padding: 0 15px;
+        }
+        .header_menu{
+            
+        }
+        .header_user_actions{
+            display: flex;
+            align-items: center;
+            .theme_button{
+                margin-right: 20px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
